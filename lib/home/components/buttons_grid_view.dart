@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:college_average_calculator/screens/calculate_average.dart';
 import 'package:flutter/material.dart';
+
+import 'package:college_average_calculator/screens/calculator/calculate_average.dart';
 
 class ButtonsGridView extends StatelessWidget {
 
@@ -9,7 +10,8 @@ class ButtonsGridView extends StatelessWidget {
 
   const ButtonsGridView({
     Key? key,
-    required this.icon, required this.titleCard,
+    required this.icon,
+    required this.titleCard,
   }) : super(key: key);
 
   @override
@@ -21,10 +23,7 @@ class ButtonsGridView extends StatelessWidget {
           MaterialPageRoute(
             builder: (context) {
               return const CalculateAverage(
-                labelGrades: "Nota",
-                hintGrades: "digite sua nota",
-                labelWeight: "Peso",
-                hintWeight: "Informe o peso da nota",
+
               );
             },
           )
